@@ -7,7 +7,6 @@ public class Main {
         card.setCardHolder("Konstantin");
         card.setDiscount(0.5);
         int amount = 500;
-    }
-    void getCurentDiscount(int amount){
+        getCurentDiscount(int amount);
     }
 }
