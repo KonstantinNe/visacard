@@ -1,9 +1,9 @@
 package ru.nemesh;
 
 public class VisaClassicCard {
-    public String id;
-    public String cardHolder;
-    public int discount;
+    private String id;
+    private String cardHolder;
+    private int discount;
     public int amount;
 
     public void setId(String id) {
@@ -17,8 +17,8 @@ public class VisaClassicCard {
         this.discount = discount;
         return discount;
     }
-    public void getCurrentDiscount() {
+    public int getCurrentDiscount() {
         if (amount > 0);
-        discount = (int) (amount*discount);
+        return amount*discount;
     }
 }
