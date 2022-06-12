@@ -1,6 +1,7 @@
 package ru.nemesh;
 
 public class VisaClassicCard {
+    public String setAmount;
     private String id;
     private String cardHolder;
     public int resultDiscount;
@@ -16,7 +17,7 @@ public class VisaClassicCard {
     public void setDiscount(double setDiscount) { this.discount = discount;}
     public void setAmount(int setAmount) { this.amount = amount;}
 
-    public void getCurrentDiscount(int resultDiscount) {
+    public void getCurrentDiscount() {
         resultDiscount = (int) (this.amount *discount);
         return;
     }
