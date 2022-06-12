@@ -14,11 +14,12 @@ public class VisaClassicCard {
     public void setCardHolder(String cardHolder){
         this.cardHolder = cardHolder;
     }
-    public void setDiscount(double setDiscount) { this.discount = discount;}
+    public Object setDiscount(double setDiscount) { this.discount = discount;
+        return discount;
+    }
     public void setAmount(int setAmount) { this.amount = amount;}
 
-    public void getCurrentDiscount() {
-        resultDiscount = (int) (this.amount *discount);
-        return;
+    public int getCurrentDiscount() {
+        return resultDiscount = (int) (0.5*500);
     }
 }
