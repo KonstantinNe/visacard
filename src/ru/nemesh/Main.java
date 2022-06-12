@@ -13,8 +13,7 @@ public class Main {
         card.setCardHolder("Vladimir");
         card.setDiscount(1);
         card.getCurrentDiscount(amount);
-        String setDiscount;
-        System.out.println("Кэшбэк по карте " + "Konstantin" + " от суммы "  + amount + " составил " + card.setDiscount(0.5) + " рублей");
+        System.out.println("Кэшбэк по карте " + "Konstantin" + " от суммы "  + amount + " составил " + card.resultDiscount + " рублей");
         return;
     }
 }
