@@ -1,7 +1,7 @@
 package ru.nemesh;
 
 public class Main {
-    public static void main(String[]  args) {
+    public static void main(String[] args) {
         int amount = 500;
         VisaClassicCard card = new VisaClassicCard();
         card.setId("1234567890");
@@ -12,9 +12,9 @@ public class Main {
         card.setId("11111111111");
         card.setCardHolder("Vladimir");
         card.setDiscount(1);
-
+        card.getCurrentDiscount(amount);
+        String setDiscount;
+        System.out.println("Кэшбэк по карте " + "Konstantin" + " от суммы "  + amount + " составил " + card.setDiscount(0.5) + " рублей");
+        return;
     }
-        static int getCurentDiscount(int amount, double setDiscount){
-           return (int) setDiscount;
-        }
 }
