@@ -5,10 +5,10 @@ public class Main {
         VisaClassicCard card = new VisaClassicCard();
         card.setId("1234567890");
         card.setCardHolder("Konstantin");
-        card.setDiscount(0.5);
-        card.setAmount = String.valueOf(500);
-        card.getCurrentDiscount();
-        System.out.println("Кэшбэк по карте " + "Konstantin" + " от суммы "  + card.setAmount + " составил " + card.resultDiscount + " рублей");
+        String discount = String.valueOf(0.5);
+        String amount = String.valueOf(500);
+        card.getCurrentDiscount(amount,discount);
+        System.out.println("Кэшбэк по карте " + "Konstantin" + " от суммы "  + amount + " составил " + card.resultDiscount + " рублей");
         return;
     }
 }
