@@ -7,8 +7,9 @@ public class Main {
         card.setCardHolder("Konstantin");
         String discount = String.valueOf(0.5);
         String amount = String.valueOf(500);
+        int resultDiscount = card.getResultDiscount();
         card.getCurrentDiscount(amount,discount);
-        System.out.println("Кэшбэк по карте " + "Konstantin" + " от суммы "  + amount + " составил " + card.resultDiscount + " рублей");
+        System.out.println("Кэшбэк по карте " + "Konstantin" + " от суммы "  + amount + " составил " + card.getResultDiscount() + " рублей");
         return;
     }
 }
