@@ -8,8 +8,8 @@ public class Main {
         double discount = 0.5;
         int amount = 500;
         int resultDiscount = card.getResultDiscount();
-        card.getCurrentDiscount(amount,discount);
-        System.out.println("Кэшбэк по карте " + "Konstantin" + " от суммы "  + amount + " составил " + card.getResultDiscount() + " рублей");
+        card.getCurrentDiscount(amount, discount);
+        System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getResultDiscount() + " рублей");
         return;
     }
 }
