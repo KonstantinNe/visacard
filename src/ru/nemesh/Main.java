@@ -5,8 +5,8 @@ public class Main {
         VisaClassicCard card = new VisaClassicCard();
         card.setId("1234567890");
         card.setCardHolder("Konstantin");
-        String discount = String.valueOf(0.5);
-        String amount = String.valueOf(500);
+        double discount = 0.5;
+        int amount = 500;
         int resultDiscount = card.getResultDiscount();
         card.getCurrentDiscount(amount,discount);
         System.out.println("Кэшбэк по карте " + "Konstantin" + " от суммы "  + amount + " составил " + card.getResultDiscount() + " рублей");

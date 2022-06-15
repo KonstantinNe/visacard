@@ -38,7 +38,8 @@ public class VisaClassicCard {
         this.discount = discount;
     }
 
-    public int getCurrentDiscount(String amount, String discount) {
+    public int getCurrentDiscount(int amount, double discount) {
+        resultDiscount = (int) (discount * amount);
        return resultDiscount;
     }
 }
