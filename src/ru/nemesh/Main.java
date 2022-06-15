@@ -13,3 +13,6 @@ public class Main {
         return;
     }
 }
+
+//double int 0 float 0.0 byte 0 boolean false char long (int)
+//почитать про сужение и расширение типов
