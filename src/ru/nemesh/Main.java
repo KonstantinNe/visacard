@@ -10,6 +10,6 @@ public class Main {
         int resultDiscount = card.getResultDiscount();
         card.getCurrentDiscount(amount, discount);
         System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getResultDiscount() + " рублей");
-        return1;
+        return;
     }
 }
