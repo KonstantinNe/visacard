@@ -11,3 +11,6 @@ public class Main {
         System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getCurrentDiscount(amount) + " рублей");
     }
 }
+
+//double int 0 float 0.0 byte 0 boolean false char long (int)
+//почитать про сужение и расширение типов
