@@ -29,7 +29,7 @@ public class VisaClassicCard {
         this.discount = discount;
     }
 
-    public double getCurrentDiscount(double amount) {
-        return (discount * amount);
+    public double getCurrentDiscountClassicCard(double amount) {
+        return (discount * amount / 100);
     }
 }
