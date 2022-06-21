@@ -4,28 +4,26 @@ public class Main {
     public static void main(String[] args) {
         double amount = 555.50;
 
-        Vcard form = new Vcard();
-
         VisaClassicCard card = new VisaClassicCard();
-        form.setId("1234567890");
-        form.setDiscount(0.5);
+        card.setId("1234567890");
+        card.setDiscount(0.5);
         card.setCardHolder("Konstantin");
-        form.getCurrentDiscountCard(amount);
-        System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + form.getCurrentDiscountCard(amount) + " рублей");
+        card.getCurrentDiscountCard(amount);
+        System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getCurrentDiscountCard(amount) + " рублей");
 
         VisaGoldCard cardGold = new VisaGoldCard();
-        form.setId("1234567891");
-        cardGold.setCardHolderGold("Vladimir");
-        form.setDiscount(1);
-        form.getCurrentDiscountCard(amount);
-        System.out.println("Кэшбэк по карте " + cardGold.getCardHolderGold()  + " от суммы " + amount + " составил " + form.getCurrentDiscountCard(amount) + " рублей");
+        card.setId("1234567891");
+        card.setCardHolder("Vladimir");
+        card.setDiscount(1);
+        card.getCurrentDiscountCard(amount);
+        System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getCurrentDiscountCard(amount) + " рублей");
 
         VisaPlatinumCard cardPlatinum = new VisaPlatinumCard();
-        form.setId("1234567892");
-        cardPlatinum.setCardHolderPlatinum("Marina");
-        form.setDiscount(1.5);
-        form.getCurrentDiscountCard(amount);
-        System.out.println("Кэшбэк по карте " + cardPlatinum.getCardHolderPlatinum()  + " от суммы " + amount + " составил " + form.getCurrentDiscountCard(amount) + " рублей");
+        card.setId("1234567892");
+        card.setCardHolder("Marina");
+        card.setDiscount(1.5);
+        card.getCurrentDiscountCard(amount);
+        System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getCurrentDiscountCard(amount) + " рублей");
     }
 }
 

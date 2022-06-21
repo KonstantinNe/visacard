@@ -1,8 +1,9 @@
 package ru.nemesh;
 
-public class Vcard {       //form, Vcard form = new Vcard()
+public abstract class Vcard {
     private String id;
     private double discount;
+    private String cardHolder;
 
     public String getId() {
         return id;
@@ -18,6 +19,14 @@ public class Vcard {       //form, Vcard form = new Vcard()
 
     public void setDiscount(double discount) {
         this.discount = discount;
+    }
+
+    public String getCardHolder() {
+        return cardHolder;
+    }
+
+    public void setCardHolder(String cardHolder) {
+        this.cardHolder = cardHolder;
     }
 
     public double getCurrentDiscountCard(double amount) {

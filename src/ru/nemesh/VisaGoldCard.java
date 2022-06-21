@@ -1,13 +1,5 @@
 package ru.nemesh;
 
-public class VisaGoldCard {
-    private String cardHolderGold;
+public class VisaGoldCard extends Vcard {
 
-    public String getCardHolderGold() {
-        return cardHolderGold;
-    }
-
-    public void setCardHolderGold(String cardHolderGold) {
-        this.cardHolderGold = cardHolderGold;
-    }
 }

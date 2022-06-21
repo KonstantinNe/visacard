@@ -1,13 +1,5 @@
 package ru.nemesh;
 
-public class VisaPlatinumCard {
-    private String cardHolderPlatinum;
+public class VisaPlatinumCard extends Vcard {
 
-    public String getCardHolderPlatinum() {
-        return cardHolderPlatinum;
-    }
-
-    public void setCardHolderPlatinum(String cardHolderPlatinum) {
-        this.cardHolderPlatinum = cardHolderPlatinum;
-    }
 }
