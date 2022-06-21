@@ -11,7 +11,7 @@ public class Main {
         card.getCurrentDiscountCard(amount);
         System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getCurrentDiscountCard(amount) + " рублей");
 
-        VisaGoldCard cardGold = new VisaGoldCard();
+        VisaGoldCard cardGold = new VisaGoldCard(); 
         card.setId("1234567891");
         card.setCardHolder("Vladimir");
         card.setDiscount(1);
