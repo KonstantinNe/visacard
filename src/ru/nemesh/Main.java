@@ -2,6 +2,7 @@ package ru.nemesh;
 
 public class Main {
     public static void main(String[] args) {
+
         double amount = 555.50;
 
         VisaClassicCard card = new VisaClassicCard();
