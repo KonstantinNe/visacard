@@ -1,9 +1,10 @@
 package ru.nemesh;
+import java.math.BigInteger;
+import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
-
-        double amount = 555.50;
+        BigDecimal amount = new BigDecimal(555.50);
 
         VisaClassicCard card = new VisaClassicCard();
         card.setId("1234567890");
