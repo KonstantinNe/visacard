@@ -1,5 +1,4 @@
 package ru.nemesh;
-import java.math.BigInteger;
 import java.math.BigDecimal;
 
 public class Main {
@@ -8,24 +7,24 @@ public class Main {
 
         VisaClassicCard card = new VisaClassicCard();
         card.setId("1234567890");
-        card.setDiscount(0.5);
         card.setCardHolder("Konstantin");
+        card.setDiscount(0.5);
         card.getCurrentDiscountCard(amount);
         System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getCurrentDiscountCard(amount) + " рублей");
 
-        VisaGoldCard cardGold = new VisaGoldCard(); 
-        card.setId("1234567891");
-        card.setCardHolder("Vladimir");
-        card.setDiscount(1);
-        card.getCurrentDiscountCard(amount);
-        System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getCurrentDiscountCard(amount) + " рублей");
+        VisaGoldCard cardGold = new VisaGoldCard();
+        cardGold.setId("1234567891");
+        cardGold.setCardHolder("Vladimir");
+        cardGold.setDiscount(1);
+        cardGold.getCurrentDiscountCard(amount);
+        System.out.println("Кэшбэк по карте " + cardGold.getCardHolder()  + " от суммы " + amount + " составил " + cardGold.getCurrentDiscountCard(amount) + " рублей");
 
         VisaPlatinumCard cardPlatinum = new VisaPlatinumCard();
-        card.setId("1234567892");
-        card.setCardHolder("Marina");
-        card.setDiscount(1.5);
-        card.getCurrentDiscountCard(amount);
-        System.out.println("Кэшбэк по карте " + card.getCardHolder()  + " от суммы " + amount + " составил " + card.getCurrentDiscountCard(amount) + " рублей");
+        cardPlatinum.setId("1234567892");
+        cardPlatinum.setCardHolder("Marina");
+        cardPlatinum.setDiscount(1.5);
+        cardPlatinum.getCurrentDiscountCard(amount);
+        System.out.println("Кэшбэк по карте " + cardPlatinum.getCardHolder()  + " от суммы " + amount + " составил " + cardPlatinum.getCurrentDiscountCard(amount) + " рублей");
     }
 }
 

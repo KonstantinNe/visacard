@@ -38,5 +38,4 @@ public abstract class Vcard {
 
         return amount;
     }
-
 }
