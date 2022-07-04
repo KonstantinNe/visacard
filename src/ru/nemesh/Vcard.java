@@ -34,8 +34,7 @@ public abstract class Vcard {
     public BigDecimal getCurrentDiscountCard(BigDecimal amount) {
 
         amount = amount.multiply(BigDecimal.valueOf(discount));
-        amount = amount.divide(BigDecimal.valueOf(100));
+        return amount.divide(BigDecimal.valueOf(100));
 
-        return amount;
     }
 }
