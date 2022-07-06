@@ -12,7 +12,7 @@ public abstract class Vcard {
         this.discount = discount;
     }
 
-    public BigDecimal getCurrentDiscountCard(BigDecimal amount) {
+    public static BigDecimal getCurrentDiscountCard(BigDecimal amount) {
 
         amount = amount.multiply(BigDecimal.valueOf(discount));
         amount = amount.divide(BigDecimal.valueOf(100));

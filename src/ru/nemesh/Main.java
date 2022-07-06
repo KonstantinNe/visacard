@@ -17,15 +17,11 @@ public class Main {
         cards.add(cardGold);
         cards.add(cardPlatinum);
 
-
-        cardClassic.getCurrentDiscountCard(amount);
-        System.out.print("Кэшбэк по карте " + ((VisaClassicCard) cardClassic).cardHolder + " от суммы " + amount + " составил " + cardClassic.getCurrentDiscountCard(amount) + " рублей");
+        for (cards : Vcard){
+                     }
+        Vcard.getCurrentDiscountCard(amount);
+        System.out.printf("Кэшбэк по карте %s от суммы %s составил %s рублей,  cardHolder, amount, cardClassic.getCurrentDiscountCard(amount)");
         
-        cardGold.getCurrentDiscountCard(amount);
-        System.out.println("Кэшбэк по карте " + ((VisaGoldCard) cardGold).cardHolder  + " от суммы " + amount + " составил " + cardGold.getCurrentDiscountCard(amount) + " рублей");
-
-        cardPlatinum.getCurrentDiscountCard(amount);
-        System.out.println("Кэшбэк по карте " + ((VisaPlatinumCard) cardPlatinum).cardHolder  + " от суммы " + amount + " составил " + cardPlatinum.getCurrentDiscountCard(amount) + " рублей");
     }
 }
 
