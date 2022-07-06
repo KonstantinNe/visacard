@@ -1,5 +1,6 @@
 package ru.nemesh;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -9,6 +10,11 @@ public class Main {
         Vcard cardClassic = new VisaClassicCard("1234567890", "Konstantin", 0.5);
         Vcard cardGold = new VisaGoldCard("1234567891", "Vladimir", 1);
         Vcard cardPlatinum = new VisaPlatinumCard("1234567892", "Marina", 1.5);
+
+        ArrayList<String> Vcard = new ArrayList<String>();
+        Vcard.add(String.valueOf(cardClassic));
+        Vcard.add(String.valueOf(cardGold));
+        Vcard.add(String.valueOf(cardPlatinum));
 
         cardClassic.getCurrentDiscountCard(amount);
         System.out.print("Кэшбэк по карте " + ((VisaClassicCard) cardClassic).cardHolder + " от суммы " + amount + " составил " + cardClassic.getCurrentDiscountCard(amount) + " рублей");
