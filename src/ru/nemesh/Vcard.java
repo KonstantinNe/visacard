@@ -3,7 +3,7 @@ package ru.nemesh;
 
 public abstract class Vcard {
     private String id;
-    String cardHolder;
+    private String cardHolder;
     private double discount;
 
     public Vcard(String id, String cardHolder, double discount) {
@@ -12,10 +12,21 @@ public abstract class Vcard {
         this.discount = discount;
     }
 
-    public static BigDecimal getCurrentDiscountCard(BigDecimal amount) {
+    public String getId() {
+        return id;
+    }
+
+    public String getCardHolder() {
+        return cardHolder;
+    }
+
+    public double getDiscount() {
+        return discount;
+    }
+
+    public BigDecimal getCurrentDiscountCard(BigDecimal amount) {
 
         amount = amount.multiply(BigDecimal.valueOf(discount));
-        amount = amount.divide(BigDecimal.valueOf(100));
-        return amount;
+        return amount.divide(BigDecimal.valueOf(100));
     }
 }

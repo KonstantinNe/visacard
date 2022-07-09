@@ -17,12 +17,10 @@ public class Main {
         cards.add(cardGold);
         cards.add(cardPlatinum);
 
-        for (cards : Vcard){
+        for (Vcard card : cards){
+            System.out.printf("Кэшбэк по карте %s от суммы %s составил %s рублей \n", card.getCardHolder(), amount, card.getCurrentDiscountCard(amount));
                      }
-        Vcard.getCurrentDiscountCard(amount);
-        System.out.printf("Кэшбэк по карте %s от суммы %s составил %s рублей,  cardHolder, amount, cardClassic.getCurrentDiscountCard(amount)");
-        
-    }
+          }
 }
 
 //double int 0 float 0.0 byte 0 boolean false char long (int)
