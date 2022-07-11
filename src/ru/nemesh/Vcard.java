@@ -1,7 +1,7 @@
 package ru.nemesh;
  import java.math.BigDecimal;
 
-public abstract class Vcard {
+public abstract class Vcard<discount> {
     private String id;
     private String cardHolder;
     private double discount;
@@ -27,6 +27,7 @@ public abstract class Vcard {
     public BigDecimal getCurrentDiscountCard(BigDecimal amount) {
 
         amount = amount.multiply(BigDecimal.valueOf(discount));
-        return amount.divide(BigDecimal.valueOf(100));
+        amount = amount.divide(BigDecimal.valueOf(100));
+        return amount.setScale(2, BigDecimal.ROUND_HALF_EVEN);
     }
 }

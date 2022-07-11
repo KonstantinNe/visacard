@@ -7,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         BigDecimal amount = new BigDecimal(555.5);
+        amount = amount.setScale(2, BigDecimal.ROUND_HALF_EVEN);
 
         Vcard cardClassic = new VisaClassicCard("1234567890", "Konstantin", 0.5);
         Vcard cardGold = new VisaGoldCard("1234567891", "Vladimir", 1);
