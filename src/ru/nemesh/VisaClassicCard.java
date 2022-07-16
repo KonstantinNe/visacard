@@ -1,13 +1,10 @@
 package ru.nemesh;
 
+import java.math.BigDecimal;
+
 public class VisaClassicCard extends Vcard {
-   private String cardHolder;
 
-    public String getCardHolder() {
-        return cardHolder;
-    }
-
-    public void setCardHolder(String cardHolder) {
-        this.cardHolder = cardHolder;
+    public VisaClassicCard(String id, String cardHolder, double discount) {
+        super(id, cardHolder, discount);
     }
 }

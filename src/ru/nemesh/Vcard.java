@@ -1,26 +1,33 @@
 package ru.nemesh;
+ import java.math.BigDecimal;
 
-public class Vcard {       //form, Vcard form = new Vcard()
+public abstract class Vcard<discount> {
     private String id;
+    private String cardHolder;
     private double discount;
+
+    public Vcard(String id, String cardHolder, double discount) {
+        this.id = id;
+        this.cardHolder = cardHolder;
+        this.discount = discount;
+    }
 
     public String getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getCardHolder() {
+        return cardHolder;
     }
 
     public double getDiscount() {
         return discount;
     }
 
-    public void setDiscount(double discount) {
-        this.discount = discount;
-    }
+    public BigDecimal getCurrentDiscountCard(BigDecimal amount){
 
-    public double getCurrentDiscountCard(double amount) {
-        return (discount * amount / 100);
+            amount = amount.multiply(BigDecimal.valueOf(discount));
+            amount = amount.divide(BigDecimal.valueOf(100));
+            return amount.setScale(2, BigDecimal.ROUND_HALF_EVEN);
+        }
     }
-}
