@@ -1,11 +1,12 @@
 package ru.nemesh;
 
-import java.math.BigDecimal;
-
-public class VisaGoldCard extends Vcard {
-
-    public VisaGoldCard(String id, String cardHolder, int discount) {
+public class VisaGoldCard extends Vcard implements Cashback {
+    public VisaGoldCard(String id, String cardHolder, double discount) {
         super(id, cardHolder, discount);
     }
 
+    @Override
+    public double getDiscount() {
+        return super.getDiscount();
+    }
 }
