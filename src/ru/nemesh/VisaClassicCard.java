@@ -6,8 +6,4 @@ public class VisaClassicCard extends Vcard implements Cashback {
         super(id, cardHolder, discount);
     }
 
-    @Override
-    public double getDiscount() {
-        return super.getDiscount();
-    }
 }

@@ -1,20 +1,17 @@
 package ru.nemesh;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
-public abstract class Vcard {
-    public static double discount;
+public abstract class Vcard{
     private String id;
-    private static String cardHolder;
+    private String cardHolder;
+    private static double discount;
 
     public Vcard(String id, String cardHolder, double discount) {
         this.id = id;
         this.cardHolder = cardHolder;
         this.discount = discount;
-    }
-
-    public double getDiscount() {
-        return discount;
     }
 
     public String getId() {
@@ -25,4 +22,7 @@ public abstract class Vcard {
         return cardHolder;
     }
 
+    public static double getDiscount() {
+        return discount;
+    }
 }
